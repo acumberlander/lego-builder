@@ -8,13 +8,12 @@ import legoCharacter from './components/LegoCharacter/legoCharacter';
 
 
 const initializeApp = () => {
-  partsData
-    .getHeads()
+  partsData.getHeads()
     .then((heads) => {
-      legoCharacter.loadHeadCarousel(heads.data);
+      legoCharacter.headBuilder(heads.data);
     })
     .catch((error) => {
-      console.error(error);
+      console.error('there was a problem fetching your data', error);
     });
 };
 
