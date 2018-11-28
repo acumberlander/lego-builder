@@ -1,14 +1,7 @@
 import axios from 'axios';
 
-const getHeads = () => new Promise((resolve, reject) => {
-  axios.get('http://localhost:3001/heads')
-    .then((data) => {
-      const allHeads = data.data;
-      resolve(allHeads);
-    })
-    .catch((error) => {
-      reject(error);
-    });
-});
+const getHeads = () => axios.get('http://localhost:3003/heads');
+const getTorsos = () => axios.get('http://localhost:3003/torsos');
+const getLegs = () => axios.get('http://localhost:3003/legs');
 
-export default { getHeads };
+export default { getHeads, getTorsos, getLegs };
