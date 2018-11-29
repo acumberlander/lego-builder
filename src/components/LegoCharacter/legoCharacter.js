@@ -93,6 +93,12 @@ const gettingLegs = () => {
     });
 };
 
+const bodyBuilder = () => {
+  gettingHeads();
+  gettingTorsos();
+  gettingLegs();
+};
+
 
 export default {
   headBuilder,
@@ -101,4 +107,5 @@ export default {
   gettingHeads,
   gettingTorsos,
   gettingLegs,
+  bodyBuilder,
 };

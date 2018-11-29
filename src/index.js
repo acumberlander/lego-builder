@@ -5,9 +5,7 @@ import './index.scss';
 import legoCharacter from './components/LegoCharacter/legoCharacter';
 
 const initializeApp = () => {
-  legoCharacter.gettingHeads();
-  legoCharacter.gettingTorsos();
-  legoCharacter.gettingLegs();
+  legoCharacter.bodyBuilder();
 };
 
 initializeApp();
