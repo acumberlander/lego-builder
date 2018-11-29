@@ -7,3 +7,16 @@ body {
 .header {
   color: red;
 }
+
+#legoHeads {
+  display: flex;
+  justify-content: center;
+}
+#legoTorsos {
+  display: flex;
+  justify-content: center;
+}
+#legoLegs {
+  display: flex;
+  justify-content: center;
+}
